@@ -1,6 +1,15 @@
 ## The Codebook describes the variables, the data, and any transformations or work that were performed to clean up the data 
 
-### The zip file is already copied and contents are extracted into the working directory. The name of the extracted folder is UCI HAR Dataset
+### Steps performed on the unzipeed data set is as follows
+1. Read the raw contents from folders in R (test and train data of X, Y, Activity, Features)
+2. Combine test and train data of X into a single data frame
+3. Combine test and train data of y into a single data frame
+4. Combine test and train data of Subject into a single data frame
+5. Create an object mean_and_std for storing names of measures that have mean or std in them
+6. Combine all data of X, Y, Subject data. Also, join the activity description data frame
+7. Filter the data frame to only those variables that match with mean_and_std
+8. Take the mean of mean and std variables, and summarize by subject and activity 
+9. Write the output into a text file called 'tidydata.txt'
 
 #### Variable names are as follows:
 
