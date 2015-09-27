@@ -12,7 +12,8 @@
 
 ### Steps to execute the script
 * Download the zip file from; https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-* Save the zip file in the working directory. There is no need to unzip. The R Script will be able to read data without unzipping
+* Save the zip file in the working directory
+* Unzip the file into a folder called "UCI HAR Dataset" and save it in the working directory
 * Run the script "run_analysis.R"
 * The output of the script is a file titled 'tidydata.txt' in the working directory
 
